@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    username: zzfw_admin
+    password: zzfw_admin
+    url: jdbc:mysql://172.16.6.115:3306/zzfw_cloud?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull
+    driver-class-name: com.mysql.jdbc.Driver
+  servlet:
+    multipart:
+      max-file-size: 10000Mb
+      max-request-size: 100000Mb
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: cn.attackme.myuploader.model
+upload:
+  path: D:\HanJunJun\github\MyUploader-Backend-master\MyUploader-Backend-master\target\upload\
